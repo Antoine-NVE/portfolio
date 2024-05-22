@@ -3,16 +3,15 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 
-body {
-    background: rgb(21, 21, 21);
+* {
     color: white;
+    font-family: "Heebo", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Heebo", sans-serif;
+body {
+    background: rgb(21, 21, 21);
+}
+
+p {
+    color: rgb(176, 176, 176);
 }
