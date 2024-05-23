@@ -2,10 +2,9 @@
     <div class="col-12 col-md-8">
         <h2 class="text-center text-md-start">Présentation</h2>
         <p class="text-center text-md-start mb-0">
-            J'ai débuté mon apprentissage du développement web en autodidacte, en me familiarisant avec les langages de
-            base du front-end. Par la suite, j'ai suivi une formation qui m'a permis de consolider mes compétences
-            existantes et d'en acquérir de nouvelles, notamment en back-end. Désormais, je souhaite approfondir ces
-            compétences pour déterminer vers quelles technologies me spécialiser.
+            J'ai débuté mon apprentissage du développement web en autodidacte, en me familiarisant avec les langages de base du front-end. Par la suite, j'ai
+            suivi une formation qui m'a permis de consolider mes compétences existantes et d'en acquérir de nouvelles, notamment en back-end. Désormais, je
+            souhaite approfondir ces compétences pour déterminer vers quelles technologies me spécialiser.
         </p>
     </div>
     <div class="col-12 col-md-4">
@@ -21,9 +20,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">
-                    <span class="me-1" *ngFor="let techno of project.technologies">
-                        {{ techno }}
-                    </span>
+                    <span *ngFor="let techno of project.technologies; let i = index"> {{ techno }}{{ i + 1 < project.technologies.length ? " - " : "" }} </span>
                 </p>
                 <a [routerLink]="project.slug" class="btn btn-info">Détails</a>
             </div>

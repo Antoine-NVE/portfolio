@@ -11,6 +11,6 @@
             "assets/img/quizz-world-v2(3).png",
             "assets/img/quizz-world-v2(4).png"
         ],
-        "technologies": ["Symfony", "Bootstrap"]
+        "technologies": ["Symfony 7", "Bootstrap 5"]
     }
 ]
