@@ -12,6 +12,6 @@ body {
     background: rgb(40, 40, 40);
 }
 
-p {
+p, span {
     color: rgb(176, 176, 176);
 }

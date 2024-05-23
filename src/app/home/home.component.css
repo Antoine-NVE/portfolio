@@ -2,6 +2,12 @@ h2 {
     font-size: 4rem;
 }
 
-img {
-    border-radius: 50%;
+h5 {
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 3rem;
+    }
 }

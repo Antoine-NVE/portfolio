@@ -1,0 +1,16 @@
+[
+    {
+        "slug": "quizz-world-v2",
+        "title": "Quizz World V2",
+        "description": "TODO",
+        "codeLink": "https://github.com/Antoine-NVE/Quizz_World_V2",
+        "images": [
+            "assets/img/quizz-world-v2.png",
+            "assets/img/quizz-world-v2(1).png",
+            "assets/img/quizz-world-v2(2).png",
+            "assets/img/quizz-world-v2(3).png",
+            "assets/img/quizz-world-v2(4).png"
+        ],
+        "technologies": ["Symfony", "Bootstrap"]
+    }
+]
