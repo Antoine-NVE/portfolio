@@ -6,13 +6,15 @@
     <div id="projectCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item" [ngClass]="i === 0 ? 'active' : ''" *ngFor="let image of project.images; let i = index">
-                <img
-                    data-bs-toggle="modal"
-                    [attr.data-bs-target]="'#projectCarouselModal' + i"
-                    [src]="image"
-                    class="d-block w-75 m-auto btn p-0"
-                    [alt]="project.title"
-                />
+                <div class="overflow-y-auto w-75 mx-auto">
+                    <img
+                        data-bs-toggle="modal"
+                        [attr.data-bs-target]="'#projectCarouselModal' + i"
+                        [src]="image"
+                        class="d-block w-100 btn p-0"
+                        [alt]="project.title"
+                    />
+                </div>
 
                 <div
                     class="modal fade"
