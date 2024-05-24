@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
         this.projectService.getProjects().subscribe({
-            next: (projects) => (this.projects = projects),
+            next: (projects: Project[]) => (this.projects = projects),
             error: (error) => console.error(error),
         });
     }

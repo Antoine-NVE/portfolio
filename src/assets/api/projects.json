@@ -2,8 +2,8 @@
     {
         "slug": "quizz-world-v2",
         "title": "Quizz World V2",
-        "description": "TODO",
-        "codeLink": "https://github.com/Antoine-NVE/Quizz_World_V2",
+        "description": "Ce projet est la deuxième version de celui que j'ai présenté lors de mon examen final pour la formation DWWM. Bien que la première version fût satisfaisante, j'ai souhaité l'améliorer en utilisant Symfony, une nouvelle technologie pour moi. J'ai principalement concentré mes efforts sur le back-end, tout en utilisant Bootstrap pour le front-end. Grâce à ma maîtrise préalable de PHP, MVC et POO, ainsi qu'un tutoriel détaillé, l'apprentissage de Symfony s'est fait sans grandes difficultés. Le site permet de créer et répondre à des quizz, avec un espace de gestion dédié aux administrateurs.",
+        "codeLink": "https://github.com/Antoine-NVE/quizz-world-v2",
         "images": [
             "assets/img/quizz-world-v2.png",
             "assets/img/quizz-world-v2(1).png",
@@ -12,5 +12,13 @@
             "assets/img/quizz-world-v2(4).png"
         ],
         "technologies": ["Symfony 7", "Bootstrap 5"]
+    },
+    {
+        "slug": "clipboard-landing-page",
+        "title": "Clipboard Landing Page",
+        "description": "TODO",
+        "codeLink": "https://github.com/Antoine-NVE/clipboard-landing-page",
+        "images": ["assets/img/clipboard-landing-page.png", "assets/img/clipboard-landing-page(1).png", "assets/img/clipboard-landing-page(2).png"],
+        "technologies": ["HTML 5", "CSS 3"]
     }
 ]

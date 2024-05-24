@@ -6,6 +6,12 @@ h5 {
     color: white;
 }
 
+.card-img-top {
+    aspect-ratio: 2;
+    object-fit: cover;
+    object-position: top;
+}
+
 @media screen and (max-width: 576px) {
     h2 {
         font-size: 3rem;

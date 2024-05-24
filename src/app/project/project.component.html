@@ -21,7 +21,7 @@
                     [attr.aria-labelledby]="'projectCarouselModal' + i + 'Label'"
                     aria-hidden="true"
                 >
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header border-bottom border-dark border-3">
                                 <h5 class="modal-title text-dark">{{ project.title }}</h5>
@@ -65,7 +65,7 @@
     <h4 class="mt-3">Description :</h4>
     <p>{{ project.description }}</p>
 
-    <a href="https://github.com/Antoine-NVE/quizz-world-v2" target="_blank">Code sur GitHub</a>
+    <a [href]="project.codeLink" target="_blank" *ngIf="project.codeLink">Code sur GitHub</a>
 </div>
 
 <ng-template #loading>

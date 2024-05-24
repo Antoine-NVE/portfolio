@@ -15,14 +15,14 @@
 <section class="row">
     <h2>Mes projets</h2>
     <div class="col-12 col-md-6 col-xl-4 mb-3" *ngFor="let project of projects">
-        <div class="card bg-dark">
-            <img [src]="project.images[0]" class="card-img-top" [alt]="project.title" />
+        <div class="card bg-dark overflow-hidden">
+            <img [src]="project.images[0]" class="card-img-top btn p-0 border-0 rounded-0" [alt]="project.title" [routerLink]="project.slug" />
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">
                     <span *ngFor="let techno of project.technologies; let i = index"> {{ techno }}{{ i + 1 < project.technologies.length ? " - " : "" }} </span>
                 </p>
-                <a [routerLink]="project.slug" class="btn btn-info">Détails</a>
+                <a [routerLink]="project.slug" class="btn btn-outline-light">Détails</a>
             </div>
         </div>
     </div>

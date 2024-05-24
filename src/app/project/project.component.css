@@ -1,3 +1,8 @@
+.carousel-item {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 @media screen and (min-width: 576px) {
     .modal-dialog {
         max-width: 75%;
