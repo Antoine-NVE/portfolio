@@ -3,6 +3,9 @@ export interface Project {
     title: string;
     description: string;
     codeLink: string | null;
-    images: string[];
+    images: {
+        url: string;
+        description: string;
+    }[];
     technologies: string[];
 }

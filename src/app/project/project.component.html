@@ -3,19 +3,21 @@
 <div *ngIf="project; else loading">
     <h2 class="text-center">{{ project.title }}</h2>
 
+    <!-- Début carousel -->
     <div id="projectCarousel" class="carousel slide">
         <div class="carousel-inner">
+            <!-- Début slide -->
             <div class="carousel-item" [ngClass]="i === 0 ? 'active' : ''" *ngFor="let image of project.images; let i = index">
                 <div class="overflow-y-auto w-75 mx-auto">
                     <img
                         data-bs-toggle="modal"
                         [attr.data-bs-target]="'#projectCarouselModal' + i"
-                        [src]="image"
+                        [src]="image.url"
                         class="d-block w-100 btn p-0"
                         [alt]="project.title"
                     />
                 </div>
-
+                <!-- Début modal -->
                 <div
                     class="modal fade"
                     [id]="'projectCarouselModal' + i"
@@ -31,16 +33,22 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body p-0">
-                                <img [src]="image" class="d-block w-100 m-auto" [alt]="project.title" />
+                                <img [src]="image.url" class="d-block w-100 m-auto" [alt]="project.title" />
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer justify-content-between">
+                                <h6 class="text-start">{{ image.description }}</h6>
                                 <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fin modal -->
+                <div class="position-relative text-center mt-1">{{ image.description }}</div>
             </div>
+            <!-- Fin slide -->
         </div>
+
+        <!-- Boutons previous et next -->
         <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -49,6 +57,8 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+
+        <!-- Indicateurs -->
         <div class="carousel-indicators position-relative">
             <button
                 type="button"
@@ -61,6 +71,7 @@
             ></button>
         </div>
     </div>
+    <!-- Fin carousel -->
 
     <h4>Technologies utilisées :</h4>
     <span *ngFor="let techno of project.technologies; let i = index">{{ techno }}{{ i + 1 < project.technologies.length ? " - " : "" }}</span>

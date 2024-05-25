@@ -5,20 +5,24 @@
         "description": "Ce projet est la deuxième version de celui que j'ai présenté lors de mon examen final pour la formation DWWM. Bien que la première version fût satisfaisante, j'ai souhaité l'améliorer en utilisant Symfony, une nouvelle technologie pour moi. J'ai principalement concentré mes efforts sur le back-end, tout en utilisant Bootstrap pour le front-end. Grâce à ma maîtrise préalable de PHP, MVC et POO, ainsi qu'un tutoriel détaillé, l'apprentissage de Symfony s'est fait sans grandes difficultés. Le site permet de créer et répondre à des quizz, avec un espace de gestion dédié aux administrateurs.",
         "codeLink": "https://github.com/Antoine-NVE/quizz-world-v2",
         "images": [
-            "assets/img/quizz-world-v2.png",
-            "assets/img/quizz-world-v2(1).png",
-            "assets/img/quizz-world-v2(2).png",
-            "assets/img/quizz-world-v2(3).png",
-            "assets/img/quizz-world-v2(4).png"
+            { "url": "assets/img/quizz-world-v2.png", "description": "Accueil" },
+            { "url": "assets/img/quizz-world-v2(1).png", "description": "Quizz" },
+            { "url": "assets/img/quizz-world-v2(2).png", "description": "Inscription" },
+            { "url": "assets/img/quizz-world-v2(3).png", "description": "Administration" },
+            { "url": "assets/img/quizz-world-v2(4).png", "description": "Création d'une question" }
         ],
         "technologies": ["Symfony 7", "Bootstrap 5"]
     },
     {
         "slug": "clipboard-landing-page",
-        "title": "Clipboard Landing Page",
+        "title": "Clipboard landing page",
         "description": "Ce projet fait partie des nombreux challenges proposés sur le site Frontend Mentor. Le design étant déjà fourni, mon objectif était de le reproduire fidèlement à partir de zéro tout en veillant à ce qu'il soit responsive. J'ai réalisé ce projet au début de mon apprentissage autodidacte, avant de suivre la formation DWWM. À cette époque, j'apprenais les bases du front-end avec HTML et CSS, afin de construire des fondations solides. Ce projet présente des éléments intéressants, notamment l'image d'écran d'ordinateur qui est partiellement masquée en mode tablette et réapparaît entièrement en mode desktop et mobile.",
         "codeLink": "https://github.com/Antoine-NVE/clipboard-landing-page",
-        "images": ["assets/img/clipboard-landing-page.png", "assets/img/clipboard-landing-page(1).png", "assets/img/clipboard-landing-page(2).png"],
+        "images": [
+            { "url": "assets/img/clipboard-landing-page.png", "description": "Desktop" },
+            { "url": "assets/img/clipboard-landing-page(1).png", "description": "Tablette" },
+            { "url": "assets/img/clipboard-landing-page(2).png", "description": "Mobile" }
+        ],
         "technologies": ["HTML 5", "CSS 3"]
     }
 ]
