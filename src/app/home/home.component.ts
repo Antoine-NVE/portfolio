@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
     constructor(private projectService: ProjectService) {}
 
     ngOnInit(): void {
+        // On récupère tous les projets
         this.projectService.getProjects().subscribe({
             next: (projects: Project[]) => (this.projects = projects),
             error: (error) => console.error(error),

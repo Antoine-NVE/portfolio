@@ -19,9 +19,11 @@ export class ProjectComponent implements OnInit {
     ngOnInit(): void {
         const slug: string = this.route.snapshot.paramMap.get('slug')!;
 
+        // On récupère tous les projets puis on choisit le bon
         this.projectService.getProjects().subscribe((projects: Project[]) => {
             this.project = projects.find((project) => project.slug === slug)!;
 
+            // Si aucun ne correspond, on redirige
             if (this.project === undefined) {
                 this.router.navigate(['']);
             }

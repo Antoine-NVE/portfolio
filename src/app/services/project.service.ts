@@ -11,12 +11,12 @@ export class ProjectService {
 
     constructor(private http: HttpClient) {}
 
+    // Fonction pour récupérer tous les projets
     public getProjects(): Observable<Project[]> {
-        return this.http
-            .get<Project[]>(this.url)
-            .pipe(catchError(this.handleError));
+        return this.http.get<Project[]>(this.url).pipe(catchError(this.handleError));
     }
 
+    // Gestion d'erreurs
     private handleError(error: HttpErrorResponse) {
         let errorMessage: string;
         if (error.status === 0) {
@@ -26,20 +26,10 @@ export class ProjectService {
         } else {
             // The backend returned an unsuccessful response code.
             // The response body may contain clues as to what went wrong.
-            console.error(
-                `Backend returned code ${error.status}, body was: `,
-                error.error
-            );
+            console.error(`Backend returned code ${error.status}, body was: `, error.error);
             errorMessage = `Backend returned code ${error.status}, body was: ${error.error}`;
         }
         // Return an observable with a user-facing error message.
-        return throwError(
-            () =>
-                new Error(
-                    'Something bad happened; please try again later.' +
-                        '\n' +
-                        errorMessage
-                )
-        );
+        return throwError(() => new Error('Something bad happened; please try again later.' + '\n' + errorMessage));
     }
 }
