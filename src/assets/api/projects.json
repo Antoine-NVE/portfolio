@@ -16,7 +16,7 @@
     {
         "slug": "clipboard-landing-page",
         "title": "Clipboard Landing Page",
-        "description": "TODO",
+        "description": "Ce projet fait partie des nombreux challenges proposés sur le site Frontend Mentor. Le design étant déjà fourni, mon objectif était de le reproduire fidèlement à partir de zéro tout en veillant à ce qu'il soit responsive. J'ai réalisé ce projet au début de mon apprentissage autodidacte, avant de suivre la formation DWWM. À cette époque, j'apprenais les bases du front-end avec HTML et CSS, afin de construire des fondations solides. Ce projet présente des éléments intéressants, notamment l'image d'écran d'ordinateur qui est partiellement masquée en mode tablette et réapparaît entièrement en mode desktop et mobile.",
         "codeLink": "https://github.com/Antoine-NVE/clipboard-landing-page",
         "images": ["assets/img/clipboard-landing-page.png", "assets/img/clipboard-landing-page(1).png", "assets/img/clipboard-landing-page(2).png"],
         "technologies": ["HTML 5", "CSS 3"]

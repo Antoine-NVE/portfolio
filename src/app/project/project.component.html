@@ -22,18 +22,19 @@
                     tabindex="-1"
                     [attr.aria-labelledby]="'projectCarouselModal' + i + 'Label'"
                     aria-hidden="true"
+                    data-bs-theme="dark"
                 >
                     <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header border-bottom border-dark border-3">
-                                <h5 class="modal-title text-dark">{{ project.title }}</h5>
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">{{ project.title }}</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body p-0">
                                 <img [src]="image" class="d-block w-100 m-auto" [alt]="project.title" />
                             </div>
-                            <div class="modal-footer border-top border-dark border-3">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
                             </div>
                         </div>
                     </div>
