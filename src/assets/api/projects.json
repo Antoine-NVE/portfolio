@@ -11,7 +11,7 @@
             { "url": "assets/img/quizz-world-v2(3).png", "description": "Administration" },
             { "url": "assets/img/quizz-world-v2(4).png", "description": "Création d'une question" }
         ],
-        "technologies": ["Symfony 7", "Bootstrap 5"]
+        "technologies": ["Symfony", "Bootstrap"]
     },
     {
         "slug": "clipboard-landing-page",
@@ -23,6 +23,54 @@
             { "url": "assets/img/clipboard-landing-page(1).png", "description": "Tablette" },
             { "url": "assets/img/clipboard-landing-page(2).png", "description": "Mobile" }
         ],
-        "technologies": ["HTML 5", "CSS 3"]
+        "technologies": ["HTML", "CSS"]
+    },
+    {
+        "slug": "acdc-tribute",
+        "title": "ACDC Tribute",
+        "description": "Ce projet est l'un des travaux pratiques que j'ai réalisés pendant ma formation DWWM. L'objectif principal était d'approfondir nos connaissances de la bibliothèque Bootstrap pour créer un site responsive. Le projet inclut un carrousel en haut de la page, permettant de faire défiler plusieurs images. La barre de navigation, également implémentée avec Bootstrap, s'adapte et change de forme en fonction de la taille de l'écran.",
+        "codeLink": "https://github.com/Antoine-NVE/acdc-tribute",
+        "images": [
+            { "url": "assets/img/acdc-tribute.png", "description": "Desktop" },
+            { "url": "assets/img/acdc-tribute(1).png", "description": "Tablette" },
+            { "url": "assets/img/acdc-tribute(2).png", "description": "Mobile" }
+        ],
+        "technologies": ["HTML", "Bootstrap"]
+    },
+    {
+        "slug": "pokemon-memory",
+        "title": "Pokemon Memory",
+        "description": "Ce projet est un TP que j'ai réalisé durant ma formation DWWM. Il s'agit d'un petit jeu de mémorisation où le but est de cliquer sur des images similaires. La logique du jeu est entièrement implémentée en JavaScript, permettant de détecter les différents cas pour savoir si une paire a été trouvée. L'atout majeur de ce projet est l'utilisation de Cordova, qui nous a permis de déployer l'application directement sur nos téléphones.",
+        "codeLink": "https://github.com/Antoine-NVE/pokemon-memory",
+        "images": [
+            { "url": "assets/img/pokemon-memory.png", "description": "Accueil" },
+            { "url": "assets/img/pokemon-memory(1).png", "description": "Partie en cours" },
+            { "url": "assets/img/pokemon-memory(2).png", "description": "Mobile" }
+        ],
+        "technologies": ["JavaScript", "Cordova"]
+    },
+    {
+        "slug": "crud-php",
+        "title": "CRUD PHP",
+        "description": "Ce projet est un TP réalisé durant ma formation DWWM. L'objectif principal était d'apprendre à maîtriser les systèmes CRUD en PHP, d'où un aspect visuel minimaliste. Nous avons utilisé une liste d'utilisateurs existante et créé un tableau pour la lecture, deux formulaires pour la création et la modification, ainsi qu'un lien pour la suppression. Pour assurer la sécurité, nous avons utilisé PDO, ce qui évite la concaténation des requêtes SQL et prévient les injections SQL. Le SGBDR utilisé pour ce projet était MySQL.",
+        "codeLink": "https://github.com/Antoine-NVE/crud-php",
+        "images": [
+            { "url": "assets/img/crud-php.png", "description": "Liste" },
+            { "url": "assets/img/crud-php(1).png", "description": "Modifier" },
+            { "url": "assets/img/crud-php(2).png", "description": "Ajouter" }
+        ],
+        "technologies": ["PHP", "MySQL"]
+    },
+    {
+        "slug": "connexion-php-mvc",
+        "title": "Connexion PHP MVC",
+        "description": "Ce projet est un TP réalisé durant ma formation DWWM. L'objectif était d'apprendre les systèmes de connexion et d'inscription, ainsi que de comprendre l'architecture MVC. Les contrôles des formulaires sont effectués en JavaScript pour empêcher la soumission dans certaines conditions, et en PHP pour assurer la sécurité, vérifier les doublons d'utilisateur et les erreurs de mot de passe. Une fois connecté, l'utilisateur est redirigé vers une page d'accueil.",
+        "codeLink": "https://github.com/Antoine-NVE/connexion-php-mvc",
+        "images": [
+            { "url": "assets/img/connexion-php-mvc.png", "description": "Connexion" },
+            { "url": "assets/img/connexion-php-mvc(1).png", "description": "Inscription" },
+            { "url": "assets/img/connexion-php-mvc(2).png", "description": "Accueil" }
+        ],
+        "technologies": ["JavaScript", "PHP", "MySQL"]
     }
 ]
