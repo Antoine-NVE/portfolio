@@ -5,7 +5,7 @@
 
     <!-- Début carousel -->
     <div id="projectCarousel" class="carousel slide">
-        <div class="carousel-inner">
+        <div class="carousel-inner position-relative">
             <!-- Début slide -->
             <div class="carousel-item" [ngClass]="i === 0 ? 'active' : ''" *ngFor="let image of project.images; let i = index">
                 <div class="overflow-y-auto w-75 mx-auto">
@@ -46,17 +46,17 @@
                 <div class="position-relative text-center mt-1">{{ image.description }}</div>
             </div>
             <!-- Fin slide -->
-        </div>
 
-        <!-- Boutons previous et next -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <!-- Boutons previous et next -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <!-- Indicateurs -->
         <div class="carousel-indicators position-relative">
