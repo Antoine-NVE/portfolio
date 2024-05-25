@@ -2,6 +2,11 @@
     aspect-ratio: 1.98;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    width: 12.5%;
+}
+
 @media screen and (min-width: 576px) {
     .overflow-y-auto {
         aspect-ratio: 2;
